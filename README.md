@@ -1,2 +1,2 @@
 # ecommerce_project
-ecommerce for coca cola.
+Ecommerce for coca cola.
