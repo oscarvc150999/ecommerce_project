@@ -1,0 +1,106 @@
+header {
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  box-sizing: border-box;
+  color: #fff;
+}
+@media screen and (min-width: 26rem) and (max-width: 65rem) {
+  header {
+    width: 95%;
+  }
+  header .navbar {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+  }
+}
+@media screen and (max-width: 25rem) {
+  header {
+    width: 100%;
+  }
+  header .navbar-brand,
+  header .nav-link {
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    font-size: 0.9rem;
+  }
+}
+header .header__logo {
+  width: 120px;
+  cursor: pointer;
+}
+header .header__menu {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+header .header__nav {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+header .header__link {
+  cursor: pointer;
+}
+header .header__user {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 40px;
+}
+header .header__icon {
+  filter: invert(1);
+  width: 30px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 25rem) {
+  main h1 {
+    display: block;
+    font-size: small;
+    font-weight: 900;
+  }
+}
+@media screen and (min-width: 26rem) and (max-width: 65rem) {
+  main h1 {
+    display: block;
+    font-size: x-large;
+    font-weight: 900;
+  }
+}
+main .carousel {
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 0px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+@media screen and (min-width: 26rem) and (max-width: 65rem) {
+  main .carousel {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 25rem) {
+  main {
+    width: 400px;
+  }
+}
+main .alert {
+  margin-top: 20px;
+}
+main .carousel-control-prev-icon,
+main .carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23888' viewBox='0 0 16 16'%3E%3Cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3E%3C/svg%3E");
+}
+main .carousel-control-next-icon {
+  transform: rotate(180deg);
+}
+
+body {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}/*# sourceMappingURL=main.css.map */

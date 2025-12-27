@@ -1,0 +1,106 @@
+header{
+    background-color: red;
+    @include flexBox;
+    gap: 10px;
+    box-sizing: border-box;
+    color: #fff;
+
+    @include tablet{
+        width: 95%;
+        .navbar {
+            padding-top: 0.2rem;
+            padding-bottom: 0.2rem;
+        }
+    }
+
+    @include smartphone{
+        width: 100%;
+        .navbar-brand,
+        .nav-link {
+            padding-top: 0.1rem;
+            padding-bottom: 0.1rem;
+            font-size: 0.9rem;
+        }
+    }
+
+    .header__logo{
+        width: 120px;
+        cursor: pointer;
+    }
+
+    .header__menu{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .header__nav{
+        display: flex;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .header__link{
+        cursor: pointer;
+    }
+
+    .header__user{
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+        padding: 40px;
+    }
+
+    .header__icon{
+        filter: invert(1);
+        width: 30px;
+        cursor: pointer;
+    }
+}
+
+main{   
+    h1{
+        @include smartphone{
+            display: block;
+            font-size: small;
+            font-weight: 900;
+        }
+
+        @include tablet{
+            display: block;
+            font-size: x-large;
+            font-weight: 900;
+        }
+    }
+    .carousel{
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    @include tablet{
+        width: 400px;
+    }
+    }
+
+    @include smartphone{
+        width: 400px;
+    }
+
+    .alert{
+        margin-top: 20px;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23888' viewBox='0 0 16 16'%3E%3Cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3E%3C/svg%3E");
+    }
+
+    .carousel-control-next-icon {
+        transform: rotate(180deg);
+    }
+
+}

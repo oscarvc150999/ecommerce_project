@@ -1,0 +1,14 @@
+$fontFamily: "Montserrat", Arial, Helvetica, sans-serif;
+
+@mixin flexBox{
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin tablet{
+    @media screen and  (min-width: 26rem) and (max-width: 65rem){@content};
+}
+
+@mixin smartphone{
+    @media screen and (max-width: 25rem){@content};
+}
